@@ -1,4 +1,4 @@
-package cz.swq.commons.lang.builder;
+package org.apache.commons.lang.builder;
 
 public class MrBean {
 	String gamma;

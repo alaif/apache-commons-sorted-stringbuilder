@@ -1,7 +1,5 @@
-package cz.swq.commons.lang.builder;
+package org.apache.commons.lang.builder;
 
-import org.apache.commons.lang.builder.ToStringStyle;
-import org.apache.commons.lang.builder.ToStringBuilderAlphaSorted;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
