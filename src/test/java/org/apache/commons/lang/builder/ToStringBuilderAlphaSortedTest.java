@@ -26,6 +26,7 @@ public class ToStringBuilderAlphaSortedTest {
 		bean.gamma = "X";
 		bean.alpha = "Z";
 		bean.beta = "Y";
+		ToStringBuilderAlphaSorted.reflectionToString(bean, style);
 		assertEquals(
 				ToStringBuilderAlphaSorted.reflectionToString(bean, style),
 				"MrBean[alpha=Z,beta=Y,gamma=X]"

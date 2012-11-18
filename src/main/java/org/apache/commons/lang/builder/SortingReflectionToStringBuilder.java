@@ -68,24 +68,4 @@ public class SortingReflectionToStringBuilder extends ReflectionToStringBuilder 
 		}
 	}
 
-
-	/**
-	 * <p>
-	 * Gets the String built by this builder.
-	 * </p>
-	 *
-	 * @return the built string
-	 */
-	public String toString() {
-		if (this.getObject() == null) {
-			return this.getStyle().getNullText();
-		}
-		Class clazz = this.getObject().getClass();
-		this.appendFieldsIn(clazz);
-		while (clazz.getSuperclass() != null && clazz != this.getUpToClass()) {
-			clazz = clazz.getSuperclass();
-			this.appendFieldsIn(clazz);
-		}
-		return super.toString();
-	}
 }
